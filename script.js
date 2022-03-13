@@ -1,1 +1,4 @@
-console.log("Test")
+// DOM Elements
+
+
+// Global Variables
