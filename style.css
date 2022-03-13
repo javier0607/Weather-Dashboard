@@ -5,7 +5,7 @@ nav {
 
 .topDiv {
     border-bottom: 3px solid white;
-    background-color: beige;
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -31,10 +31,10 @@ nav {
 }
 
 .secondColumn {
-    background-color: beige;
+    background-color: white;
 }
 
-.currentWeatherContainer {
+.WeatherContainer {
     height: 45%;
     background-color: white;
     border: 3px gray solid;
@@ -50,7 +50,7 @@ nav {
 
 html, body {
     height: 100%;
-    background-color: beige;
+    background-color: white;
 }
 
 
