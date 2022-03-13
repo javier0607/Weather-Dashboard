@@ -1,6 +1,89 @@
-
-
-.nav {
+nav {
     background-image: linear-gradient(to right, blue , rgb(59, 0, 153));
     color: white;
 }
+
+.topDiv {
+    border-bottom: 3px solid white;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;  
+    margin-top: 20px;
+}
+
+.topDiv button {
+    background-color: blue;
+    color: white;
+    font-family: sans-serif;
+    font-size: x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: white solid;
+    border-radius: 10px;
+}
+
+.topDiv input {
+    width: 400px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.secondColumn {
+    background-color: beige;
+}
+
+.currentWeatherContainer {
+    height: 45%;
+    background-color: white;
+    border: 3px gray solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.columnContainer {
+   margin-left: 40px;
+   margin-right: 40px;
+   height: 100%;
+}
+
+html, body {
+    height: 100%;
+    background-color: beige;
+}
+
+
+.card {
+    border: 3px white solid;
+    border-radius: 10px;
+    background-color: darkgray;
+    height: 200px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#searchHistoryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 300px;
+}
+
+.cities {
+    background-color: darkgray;
+    color: black;
+    border: white 3px solid;
+    border-radius: 10px;
+}
+

@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap link-->
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  />  
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css" />
     <title>Weather Dashboard</title>
-</head>
-<body>
-    <nav class = "nav justify-content-center">
-        <h1> Weather Dashboard</h1>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="nav justify-content-center">
+      <h1>Weather Dashboard</h1>
     </nav>
-    
-    <div class = "columnContainer row justify-content-start">
-        <div class ="firstColumn col-3">
-            <div class = "topDiv">
-                <h2>Search for a City:</h2>
-                <form id = "form">
-                    <input id="searchBar" type="text" placeholder="Type a City" />
-                </form>
-                <h4>History</h4>
-            </div>
-            <div id="searchHistoryContainer"></div>
+    <!--Column to split page in two 25/75-->
+    <div class="columnContainer row justify-content-start">
+      <!--First column-->
+      <div class="col-3">
+        <div class= 'topDiv '>  
+          <h1>Search for a city: </h1>
+          <form id="form">
+            <input id="searchBar" type="text" placeholder="Type a City" />
+          </form>
+          <button form="form" type="submit" class="searchButton">Search</button>
         </div>
-    </div>
-
-    <!--Second column-->
-    <div class = "secondColumn col-9">
+        <div id="searchHistoryContainer"></div>
+      </div>
+      <!--Second column-->
+      <div class="secondColumn col-9">
         <!--container to display info-->
-        <div class = "currentWeatherContainer"></div>
+        <div class="currentWeatherContainer"></div>
         <!--cards to display next 5 days-->
-        <div class = "cardContainer">  </div>
+        <div class="cardContainer">  </div>
       </div>
     </div>
     <!--Moment JS-->
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <!--JS link-->
-    
-    <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
