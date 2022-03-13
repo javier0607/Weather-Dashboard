@@ -1,3 +1,6 @@
-p {
-    color: rebeccapurple;
+
+
+.nav {
+    background-image: linear-gradient(to right, blue , rgb(59, 0, 153));
+    color: white;
 }

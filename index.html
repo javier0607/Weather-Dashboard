@@ -22,7 +22,22 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <p>Test</p>
+    <nav class = "nav justify-content-center">
+        <h1> Weather Dashboard</h1>
+    </nav>
+    
+    <div class = "columnContainer row justify-content-start">
+        <div class ="firstColumn col-3">
+            <div class = "topDiv">
+                <h2>Search for a City:</h2>
+                <form id = "form">
+                    <input id="searchBar" type="text" placeholder="Type a City" />
+                </form>
+                <h4>History</h4>
+            </div>
+            <div id="searchHistoryContainer"></div>
+        </div>
+    </div>
     
     <script src = "script.js"></script>
 </body>
